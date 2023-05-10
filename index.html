@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <title>파타고니아</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .gnb > .top {
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 15px;
+
+      background-color: #500778;
+      height: 50px;
+
+      padding: 0px 20px;
+    }
+
+    .gnb > .top > a, .gnb > .top > span {
+      color: white;
+    }
+
+    .gnb > .top > a {
+      text-decoration: none;
+    }
+
+    .gnb > .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0px 20px;
+
+      height: 70px;
+    }
+
+    .gnb > .bottom > .left {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .gnb > .bottom > .left > img {
+      width: 130px;
+    }
+
+    .left > span {
+      font-weight: 900;
+      font: 20px;
+      cursor: pointer;
+    }
+
+    .left > input {
+      width: 500px;
+      height: 40px;
+      padding: 8px 12px;
+
+      font-size: 16px;
+    }
+
+    .iconWrapper {
+      display: flex;
+      align-items: center;
+
+      gap: 20px;
+    }
+
+    .iconWrapper > i {
+      font-size: 24px;
+    }
+
+    .imageBox > img {
+      width: 100%;
+    }
+
+    .itemBox {
+      padding: 20px 30px;
+      display: flex;
+      gap: 50px;
+    }
+
+    .type-list {
+      /* background-color: green; */
+      width: fit-content;
+    }
+
+    .type-list > .title {
+      font-size: 25px;
+      padding-left: 15px;
+    }
+
+    .type-list > li {
+      list-style: none;
+      font-size: 17px;
+      padding: 8px 15px;
+
+      border-bottom: 1px solid lightgray;
+    }
+
+    .type-list > li:last-child {
+      border-bottom: none;
+    }
+
+    .product-list {
+      display: flex;
+      gap: 15px;
+    }
+
+    .product-list > .card {
+      width: 288px;
+      border: 1px solid lightgray;
+      padding-left: 12px;
+    }
+
+    .product-list > .card > img {
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    <div class="gnb" >
+      <div class="top" >
+        <a href="#" >Climate Goals</a>
+        <a href="#" >푸른 심장</a>
+        <a href="#" >Worn Wear</a>
+        <span>|</span>
+        <a href="#" >더보기</a>
+      </div>
+
+      <div class="bottom" >
+        <div class="left" >
+          <img src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/patagonia_main_logo.png" />
+          <span>SHOP</span>
+          <span>INSIDE PATAGONIA</span>
+          <input placeholder="Search" />
+        </div>
+
+        <div class="iconWrapper" >
+          <i class="bi bi-question-circle-fill" ></i>
+          <i class="bi bi-person-fill" ></i>
+          <i class="bi bi-cart-fill" ></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="imageBox" >
+      <img src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/patagonia_main_banner.png" />
+    </div>
+
+    <div class="itemBox" >
+      <ul class="type-list" >
+        <span class="title" >WOMEN'S</span>
+        <li>신상품</li>
+        <li>재킷 & 베스트</li>
+        <li>플리스</li>
+        <li>스웨트셔츠 & 후디</li>
+        <li>셔츠</li>
+        <li>티셔츠</li>
+        <li>팬츠 & 레깅스</li>
+        <li >모자 & 액세서리</li>
+      </ul>
+
+      <div class="product-list" >
+        <div class="card" >
+          <img src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/patagonia_item_1.png" />
+          <span>Women Stand Up Overalls</span> <br/>
+          <span>₩159,000</span>
+        </div>
+        <div class="card" >
+          <img src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/patagonia_item_2.png" />
+          <span>Women Ridge Flow Shirt</span> <br/>
+          <span>₩89,000</span>
+        </div>
+        <div class="card" >
+          <img src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/patagonia_item_3.png" />
+          <span>Women All Seasons Hemp Canvas Shorts</span> <br/>
+          <span>₩119,000</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
